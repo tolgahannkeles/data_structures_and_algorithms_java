@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/midterm_prep.iml" filepath="$PROJECT_DIR$/midterm_prep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data_structures_and_algorithms_java.iml" filepath="$PROJECT_DIR$/data_structures_and_algorithms_java.iml" />
     </modules>
   </component>
 </project>
