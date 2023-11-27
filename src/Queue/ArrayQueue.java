@@ -1,3 +1,5 @@
+package Queue;
+
 public class ArrayQueue<E> {
 
     private E[] arr;

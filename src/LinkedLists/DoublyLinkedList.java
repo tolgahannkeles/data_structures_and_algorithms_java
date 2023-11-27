@@ -1,3 +1,5 @@
+package LinkedLists;
+
 public class DoublyLinkedList<E> {
     private Node<E> head;
     private Node<E> tail;
@@ -61,7 +63,7 @@ public class DoublyLinkedList<E> {
         return remove(tail.getPrev());
     }
 
-    void display() {
+    public void display() {
         Node<E> current = head;
         String str = "";
         while (current.getNext() != null) {

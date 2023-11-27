@@ -1,3 +1,5 @@
+package LinkedLists;
+
 public class SinglyLinkedList<E> {
     private Node<E> head;
     private Node<E> tail;
@@ -6,25 +8,25 @@ public class SinglyLinkedList<E> {
     public SinglyLinkedList() {
     }
 
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return size == 0;
     }
 
-    int size() {
+    public int size() {
         return size;
     }
 
-    E first() {
+    public E first() {
         if (isEmpty()) return null;
         return head.getElement();
     }
 
-    E last() {
+    public E last() {
         if (isEmpty()) return null;
         return tail.getElement();
     }
 
-    void addFirst(E element) {
+    public void addFirst(E element) {
         head = new Node<>(element, head);
         if (isEmpty()) {
             tail = head;
@@ -32,7 +34,7 @@ public class SinglyLinkedList<E> {
         size++;
     }
 
-    void addLast(E element) {
+    public void addLast(E element) {
         Node<E> newNode = new Node<>(element, null);
         if (isEmpty()) {
             head = newNode;
@@ -43,7 +45,7 @@ public class SinglyLinkedList<E> {
         size++;
     }
 
-    E removeFirst() {
+    public E removeFirst() {
         if (isEmpty()) return null;
         E element = head.getElement();
         head = head.getNext();
@@ -54,7 +56,7 @@ public class SinglyLinkedList<E> {
         return element;
     }
 
-    E removeLast() {
+    public E removeLast() {
         if (isEmpty()) return null;
         if (size == 1) {
             return removeFirst();
@@ -72,7 +74,7 @@ public class SinglyLinkedList<E> {
     }
 
 
-    void display() {
+    public void display() {
         Node<E> current = head;
         String str = "";
         while (current != null) {

@@ -1,3 +1,5 @@
+package Deque;
+
 public class ArrayDeque<E> {
     private E[] arr;
     private int size;

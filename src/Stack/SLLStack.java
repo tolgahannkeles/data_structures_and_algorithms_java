@@ -1,3 +1,7 @@
+package Stack;
+
+import LinkedLists.SinglyLinkedList;
+
 public class SLLStack<E> {
     private SinglyLinkedList<E> sll;
     public SLLStack(){

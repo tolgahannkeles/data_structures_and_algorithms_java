@@ -73,11 +73,17 @@ public class Recursion {
         }
     }
 
-    static int binarySum(int[] arr, int start, int num) {
-        if (num == 1) return arr[start];
-        return binarySum(arr, start, num / 2) + binarySum(arr, start + num / 2, num / 2);
+    public static int binarySum(int[] array, int left, int
+            right) {
+        if (left == right) {
+            return array[left];
+        } else {
+            int mid = (left + right) / 2;
+            int sumLeft = binarySum(array, left, mid);
+            int sumRight = binarySum(array, mid + 1, right);
+            return sumLeft + sumRight;
+        }
     }
-
     public static int binaryFibonacci(int k) {
         // O(2^n)
         if (k == 0) {

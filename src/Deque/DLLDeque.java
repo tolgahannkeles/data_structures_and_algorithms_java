@@ -1,3 +1,7 @@
+package Deque;
+
+import LinkedLists.DoublyLinkedList;
+
 public class DLLDeque<E> {
     private DoublyLinkedList<E> dll;
     public DLLDeque(){

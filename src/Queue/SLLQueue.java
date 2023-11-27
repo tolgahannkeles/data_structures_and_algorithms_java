@@ -1,3 +1,7 @@
+package Queue;
+
+import LinkedLists.SinglyLinkedList;
+
 public class SLLQueue<E> {
 
     private SinglyLinkedList<E> sll;
